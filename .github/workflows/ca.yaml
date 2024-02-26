@@ -19,4 +19,11 @@ jobs:
       - name: Check Python version
         run: python --version
 
+      - name: install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Tests
+        run: pytest tests
+
+
 
